@@ -1,0 +1,13 @@
+#jokeText {
+    background-color:rgb(4, 0, 255);
+    color:rgb(255, 255, 255);
+}
+
+div {
+    height:200px;
+    width:200px;
+    align-items: center;
+}
+.college{
+    margin-top:20px;
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CardioRisk AI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(135deg, #cce3f9, #a3d5f7);
+      animation: fadeIn 2s ease-in-out;
+      color: #2c3e50;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background: #ffffffcc;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: all 0.5s ease;
+      z-index: 1000;
+    }
+
+    nav:hover {
+      background: #e3f2fd;
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: #3498db;
+    }
+
+    ul {
+      display: flex;
+      gap: 1.5rem;
+      list-style: none;
+    }
+
+    li a {
+      text-decoration: none;
+      color: #2c3e50;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    li a:hover {
+      color: #3498db;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 6rem 2rem;
+      text-align: center;
+      animation: slideUp 1.5s ease;
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(40px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    .hero h1 {
+      font-size: 4rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
+    }
+
+    .cta-button {
+      padding: 1rem 2rem;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .cta-button:hover {
+      background-color: #2980b9;
+    }
+
+    .medical-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 3rem;
+      padding: 4rem 2rem;
+      background: #ecf7ff;
+    }
+
+    .medical-icon {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 3rem;
+      color: #3498db;
+    }
+
+    .medical-icon p {
+      margin-top: 0.5rem;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">CardioRisk AI</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero" id="home">
+    <h1>Heart Prediction</h1>
+    <p>Data-driven insights to safeguard your heart’s future.</p>
+    <button class="cta-button" onclick="window.location.href='#predict'">Start Predicting</button>
+  </section>
+
+  <section class="medical-section">
+    <div class="medical-icon">
+      <i class="fas fa-stethoscope"></i>
+      <p>Stethoscope</p>
+    </div>
+    <div class="medical-icon">
+      <i class="fas fa-user-md"></i>
+      <p>Expert Doctors</p>
+    </div>
+    <div class="medical-icon">
+      <i class="fas fa-heartbeat"></i>
+      <p>Heart Monitor</p>
+    </div>
+    <div class="medical-icon">
+      <i class="fas fa-notes-medical"></i>
+      <p>Medical Reports</p>
+    </div>
+  </section>
+
+</body>
+</html>
